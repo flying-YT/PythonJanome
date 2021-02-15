@@ -1,0 +1,15 @@
+ビルド
+docker-compose up -d --build
+
+コンテナ停止
+docker-compose down
+
+コンテナに入る
+docker-compose exec python3 bash
+
+コンテナから抜ける
+exit
+
+アプリ実行
+cd opt
+python 〇〇.py
