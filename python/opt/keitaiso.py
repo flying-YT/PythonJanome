@@ -22,7 +22,8 @@ for file in files_file:
     for row in df.itertuples():
         tokens = t.tokenize(row[2])
         pos = [token.base_form for token in tokens
-            if token.part_of_speech.split(',')[0] in ["名詞", "動詞"]]
+#            if token.part_of_speech.split(',')[0] in ["名詞", "動詞"]]
+            if token.part_of_speech.split(',')[0] in ["名詞"]]
         print(pos)
         word_list.append(pos)
 
